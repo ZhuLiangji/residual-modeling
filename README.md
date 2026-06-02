@@ -24,11 +24,15 @@ GAE uses a PCA/SVD-style residual correction strategy. After the learned base co
 ### LBRC
 
 LBRC is a deterministic residual coding method. It quantizes the learned residual according to the target block-level NRMSE, then applies 3D Lorenzo differencing, zigzag mapping, bit-plane coding, and entropy coding. LBRC does not require training and does not introduce additional learned parameters.
-
+<p align="center">
+  <img src="figures/model1.png" width="750">
+</p>
 ### NGLR
 
 NGLR extends LBRC with a causal neural bias predictor. The neural predictor uses base reconstruction features and causal quantized residual neighbors to improve the Lorenzo prediction. The NGLR model size is counted because the neural predictor is serialized as part of the compressed representation.
-
+<p align="center">
+  <img src="figures/model2.png" width="750">
+</p>
 
 ## Environment
 
