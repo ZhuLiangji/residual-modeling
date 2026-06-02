@@ -77,7 +77,7 @@ In the paper, the methods are evaluated on:
 - **E3SM** climate simulation data
 - **JHTDB** turbulence data
 - **ERA5** atmospheric reanalysis data
-- 
+  
 ## Citation
 
 If you use this code, please cite:
