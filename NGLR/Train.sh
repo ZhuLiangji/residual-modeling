@@ -5,5 +5,5 @@ python Train.py \
   --block_t 60 \
   --block_h 128 \
   --block_w 128 \
-  --train_epochs 150 \
+  --train_epochs 60 \
   --device cuda
