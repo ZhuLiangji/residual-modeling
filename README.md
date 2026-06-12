@@ -81,7 +81,25 @@ In the paper, the methods are evaluated on:
 - **E3SM** climate simulation data
 - **JHTDB** turbulence data
 - **ERA5** atmospheric reanalysis data
-  
+
+## Example Dataset
+
+An example JHTDB dataset and pretrained weights are provided through Google Drive:
+
+[Download example data and weights](https://drive.google.com/drive/folders/1Tnro4DlBpFSJcSEnK3v7WaxbtS45DpoV?usp=drive_link)
+
+The folder structure is:
+
+NGLR/
+├── JHTDB_weights/
+└── jhtdb.npz
+
+The file jhtdb.npz follows the input format required by this repository. It contains the original data, the lossy reconstruction from the base compressor, and the latent bit cost used to compute the final compression ratio.
+
+For details about the base CAESAR compressor, please refer to the paper CAESAR: A Unified Framework for Foundation and Generative Models for Efficient Compression of Scientific Data and the CAESAR GitHub repository: https://github.com/Shaw-git/CAESAR.
+
+After downloading the folder, update the input path in the corresponding .sh file before running GAE, LBRC, or NGLR.
+
 ## Citation
 
 If you use this code, please cite:
