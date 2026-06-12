@@ -89,12 +89,12 @@ An example JHTDB dataset and pretrained weights are provided through Google Driv
 [Download example data and weights](https://drive.google.com/drive/folders/1Tnro4DlBpFSJcSEnK3v7WaxbtS45DpoV?usp=drive_link)
 
 The folder structure is:
-
-NGLR/
+```text
+RM_data/
 ├── JHTDB_weights/
 └── jhtdb.npz
-
-The file jhtdb.npz follows the input format required by this repository. It contains the original data, the lossy reconstruction from the base compressor, and the latent bit cost used to compute the final compression ratio.
+```
+The file jhtdb.npz follows the input format required by this repository. It contains the original data, the lossy reconstruction from the base compressor, and the latent bit cost used to compute the final compression ratio. The weights are used for NGLR.
 
 For details about the base CAESAR compressor, please refer to the paper CAESAR: A Unified Framework for Foundation and Generative Models for Efficient Compression of Scientific Data and the CAESAR GitHub repository: https://github.com/Shaw-git/CAESAR.
 
