@@ -27,6 +27,7 @@ LBRC is a deterministic residual coding method. It quantizes the learned residua
 <p align="center">
   <img src="figures/model1.png" width="750">
 </p>
+
 ### NGLR
 
 NGLR extends LBRC with a causal neural bias predictor. The neural predictor uses base reconstruction features and causal quantized residual neighbors to improve the Lorenzo prediction. The NGLR model size is counted because the neural predictor is serialized as part of the compressed representation.
